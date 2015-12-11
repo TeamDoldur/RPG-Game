@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface IRace : IHumanoid
+    public interface IRace : IHumanoid
     {
         //Calculated by race and age
         double InitialDamage { get; }

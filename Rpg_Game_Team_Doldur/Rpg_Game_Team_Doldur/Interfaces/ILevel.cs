@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface ILevel
+    public interface ILevel
     {
         int CurrentLevel { get; }
 

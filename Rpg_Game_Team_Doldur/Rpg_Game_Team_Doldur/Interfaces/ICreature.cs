@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface ICreature
+    public interface ICreature
     {
     }
 }

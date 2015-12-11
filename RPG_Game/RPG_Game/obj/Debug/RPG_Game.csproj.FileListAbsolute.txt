@@ -8,3 +8,6 @@ c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\RPG_Game\RPG
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\RPG_Game\RPG_Game\obj\Debug\RPG_Game.exe
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\RPG_Game\RPG_Game\obj\Debug\RPG_Game.pdb
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\RPG_Game\RPG_Game\obj\Debug\RPG_Game.Form1.resources
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\RPG_Game\RPG_Game\bin\Debug\RPG_Game.exe.config
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\RPG_Game\RPG_Game\obj\Debug\RPG_Game.exe
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\RPG_Game\RPG_Game\obj\Debug\RPG_Game.pdb

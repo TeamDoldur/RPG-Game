@@ -7,7 +7,7 @@ using Interfaces;
 
 namespace Rpg_Game_Team_Doldur.Heroes
 {
-    class Player : IRace
+    public class Player : IRace
     {
 
     }

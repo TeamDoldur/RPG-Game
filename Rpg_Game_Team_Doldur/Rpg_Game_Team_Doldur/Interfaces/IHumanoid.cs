@@ -8,7 +8,7 @@ using Common;
 
 namespace Interfaces
 {
-    interface IHumanoid
+    public interface IHumanoid
     {
         string Name { get; }
 

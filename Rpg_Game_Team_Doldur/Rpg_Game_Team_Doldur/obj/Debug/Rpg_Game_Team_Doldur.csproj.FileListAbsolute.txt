@@ -6,3 +6,9 @@ c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Tea
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
 c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe.config
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Properties.Resources.resources
+D:\Softuni Rules\02.OOP\Teamwork project\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
