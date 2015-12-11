@@ -7,7 +7,11 @@ using Interfaces;
 
 namespace Rpg_Game_Team_Doldur.Skills
 {
-    class Skill:ISkill
+    class Skill : ISkill
     {
+        public int EnergyCost
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }

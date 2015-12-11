@@ -11,13 +11,13 @@ namespace Heroes
 {
     public class Player : IRace
     {
-        private List<Skills> skills; 
+       // private List<Skills> skills; 
         public Player(string name, Race race, Gender gender, int age)
         {
             this.Name = name;
             this.Race = race;
             this.Age = age;
-            this.skills = new List<Skills>();
+           // this.skills = new List<Skills>();
             SetHealth(race, age);
         }
 
