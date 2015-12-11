@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
-namespace Interfaces
+namespace Rpg_Game_Team_Doldur.Interfaces
 {
-    public interface ISkill
+    interface IPassiveSkill : ISkill
     {
-        int EnergyCost { get; }
-
+        int Duration { get; }
     }
 }

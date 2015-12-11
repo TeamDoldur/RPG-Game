@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    interface ILevel
+   public interface ILevel
     {
-        int CurrentLevel { get; }
+        int CurrentLevel { get; set; }
 
         int PointsToNextLevel { get; }
 

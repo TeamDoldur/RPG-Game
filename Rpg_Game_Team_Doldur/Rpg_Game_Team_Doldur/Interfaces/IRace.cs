@@ -9,18 +9,18 @@ namespace Interfaces
     interface IRace : IHumanoid
     {
         //Calculated by race and age
-        double InitialDamage { get; }
+        double Damage { get; }
 
         //Different for each race
-        int InitialEnergy { get; }
+        int Energy { get; }
 
         //Calculated by race and age
-        int InitialHealth { get; }
+        int Health { get; }
 
         //Different for each race
         int MaxSkillsCanHold { get; }
 
         //Different for each race
-        IList<ISkill> Skills { get; }
+        IEnumerable<ISkill> Skills { get; }
     }
 }

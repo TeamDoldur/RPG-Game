@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Common
 {
-    public interface ISkill
+    public enum Race
     {
-        int EnergyCost { get; }
-
+        Anunak,
+        Bootean,
+        Buttah,
+        Earthling,
+        Teros
     }
 }

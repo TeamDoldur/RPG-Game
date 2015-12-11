@@ -12,6 +12,8 @@ namespace Interfaces
     {
         string Name { get; }
 
+        Race Race { get; }
+
         Gender Gender { get; }
 
         int Age { get; }

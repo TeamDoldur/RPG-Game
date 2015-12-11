@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Planets;
+using Heroes;
 
 namespace Rpg_Game_Team_Doldur
 {
@@ -18,6 +19,8 @@ namespace Rpg_Game_Team_Doldur
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Planet());
+            
+           
         }
     }
 }
