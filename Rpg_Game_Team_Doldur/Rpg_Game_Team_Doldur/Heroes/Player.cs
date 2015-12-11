@@ -11,6 +11,7 @@ namespace Heroes
 {
     public class Player : IRace
     {
+        private int initialHealth;
        // private List<Skills> skills; 
         public Player(string name, Race race, Gender gender, int age)
         {
@@ -35,7 +36,7 @@ namespace Heroes
        
         private void SetHealth(Race race, int age)
         {
-            int health = 0;
+           
             switch (this.Race)
             {
               
@@ -43,14 +44,14 @@ namespace Heroes
                     {
                         if (this.Age >= 20 && this.Age <= 30)
                         {
-                            health = 260;
+                            initialHealth = 260;
                         }
                         break;
 
                     }
             }
 
-            this.Health = health;
+            this.Health = initialHealth;
         }
         public int Health { get; private set; }
 
