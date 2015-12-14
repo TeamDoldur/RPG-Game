@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Planets;
-using Heroes;
+using Rpg_Game_Team_Doldur.Engines;
 
 namespace Rpg_Game_Team_Doldur
 {
@@ -18,9 +14,7 @@ namespace Rpg_Game_Team_Doldur
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Planet());
-            
-           
+            Application.Run(new StartScreen());
         }
     }
 }

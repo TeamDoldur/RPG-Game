@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Engines
+namespace Rpg_Game_Team_Doldur.Engines
 {
-    public partial class CombatEngine : Form
+    public class GameEngine : Form
     {
         private Button button1;
 
