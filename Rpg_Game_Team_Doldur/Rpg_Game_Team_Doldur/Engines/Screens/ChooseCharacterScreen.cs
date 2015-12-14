@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rpg_Game_Team_Doldur.Engines
+namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
-    public partial class ChooseCharacterScreen : Form
+    public partial class ChooseCharacterScreenForm : Form
     {
-        public ChooseCharacterScreen()
+        public ChooseCharacterScreenForm()
         {
             InitializeComponent();
         }
 
         private void chooseCharacterButton_Click(object sender, EventArgs e)
         {
-            if (this.radioButton1.Checked)
+            if (this.anunakRadioButton.Checked)
             {
                 
             }

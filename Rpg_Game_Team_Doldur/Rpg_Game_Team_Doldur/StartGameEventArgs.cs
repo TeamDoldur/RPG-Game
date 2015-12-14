@@ -8,6 +8,5 @@ namespace Rpg_Game_Team_Doldur
 {
     public class StartGameEventArgs : EventArgs
     {
-
     }
 }

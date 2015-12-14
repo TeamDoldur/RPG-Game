@@ -1,4 +1,4 @@
-﻿namespace Rpg_Game_Team_Doldur.Engines
+﻿namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
     partial class StartScreen
     {

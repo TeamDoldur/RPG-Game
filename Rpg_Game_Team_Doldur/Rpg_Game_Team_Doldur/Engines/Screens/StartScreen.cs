@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rpg_Game_Team_Doldur.Engines
+namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
     public partial class StartScreen : Form
     {
@@ -19,7 +19,9 @@ namespace Rpg_Game_Team_Doldur.Engines
 
         private void startGameButton_Click(object sender, EventArgs e)
         {
-            
+            ChooseCharacterScreenForm currentCharacterScreenForm = new ChooseCharacterScreenForm();
+            currentCharacterScreenForm.Show();
+            this.Hide();
         }
 
         private void exitGameButton_Click(object sender, EventArgs e)

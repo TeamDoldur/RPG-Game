@@ -1,22 +1,10 @@
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe.config
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.pdb
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Properties.Resources.resources
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
-c:\users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
-C:\Users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Engines.CombatEngine.resources
-C:\Users\k.kurtev\documents\visual studio 2013\Projects\SoftUni\OOP\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Planets.Planet.resources
 D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe.config
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
 D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe
 D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.pdb
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.GameEngine.resources
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Planets.Planet.resources
+D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.ChooseCharacterScreenForm.resources
+D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.StartScreen.resources
 D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Properties.Resources.resources
 D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.StartScreen.resources
-D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.ChooseCharacterScreen.resources
+D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
+D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\Teamwork\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache

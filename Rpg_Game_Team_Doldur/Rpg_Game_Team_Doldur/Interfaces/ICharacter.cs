@@ -8,7 +8,6 @@ namespace Rpg_Game_Team_Doldur.Interfaces
 {
     public interface ICharacter : IAttack, IHeal, IDestroyable
     {
-        string Name { get; }
         Position Position { get; }
     }
 }

@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public enum Race
+    public enum PlayerRace
     {
         Anunak,
         Bootean,
-        Buttah,
-        Earthling,
         Teros
     }
 }
