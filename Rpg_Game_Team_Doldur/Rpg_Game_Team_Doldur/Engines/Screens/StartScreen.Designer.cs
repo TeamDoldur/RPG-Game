@@ -1,4 +1,7 @@
-﻿namespace Rpg_Game_Team_Doldur.Engines.Screens
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
     partial class StartScreen
     {
@@ -54,15 +57,16 @@
             // 
             // StartScreen
             // 
+            this.BackgroundImage = Image.FromFile("../../randomImage.jpg");
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.exitGameButton);
             this.Controls.Add(this.startGameButton);
             this.Name = "StartScreen";
             this.Text = "StartScreen";
             this.ResumeLayout(false);
-
         }
 
         #endregion

@@ -10,19 +10,30 @@ using System.Windows.Forms;
 
 namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
-    public partial class ChooseCharacterScreenForm : Form
+    public partial class ChooseCharacterScreen : Form
     {
-        public ChooseCharacterScreenForm()
+        public ChooseCharacterScreen()
         {
             InitializeComponent();
         }
-
+        
         private void chooseCharacterButton_Click(object sender, EventArgs e)
         {
             if (this.anunakRadioButton.Checked)
             {
                 
             }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void backToStartScreenButton_Click(object sender, EventArgs e)
+        {
+            Program.InitialScreen.Show();
+            this.Hide();
         }
     }
 }

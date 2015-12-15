@@ -6,6 +6,8 @@ namespace Rpg_Game_Team_Doldur
 {
     static class Program
     {
+        public static StartScreen InitialScreen { get; private set; }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -14,7 +16,9 @@ namespace Rpg_Game_Team_Doldur
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartScreen());
+            InitialScreen = new StartScreen();
+            InitialScreen.Show();
+            Application.Run();
         }
     }
 }

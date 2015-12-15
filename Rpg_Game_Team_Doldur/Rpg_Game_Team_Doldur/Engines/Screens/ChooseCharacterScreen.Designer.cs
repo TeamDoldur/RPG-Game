@@ -1,6 +1,9 @@
-﻿namespace Rpg_Game_Team_Doldur.Engines.Screens
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
-    partial class ChooseCharacterScreenForm
+    partial class ChooseCharacterScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +36,7 @@
             this.terosRadioButton = new System.Windows.Forms.RadioButton();
             this.chooseCharacterButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.backToStartScreenButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // anunakRadioButton
@@ -87,17 +91,29 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Choose the race of your character";
             // 
+            // backToStartScreenButton
+            // 
+            this.backToStartScreenButton.Location = new System.Drawing.Point(283, 176);
+            this.backToStartScreenButton.Name = "backToStartScreenButton";
+            this.backToStartScreenButton.Size = new System.Drawing.Size(75, 23);
+            this.backToStartScreenButton.TabIndex = 5;
+            this.backToStartScreenButton.Text = "Back";
+            this.backToStartScreenButton.UseVisualStyleBackColor = true;
+            this.backToStartScreenButton.Click += new System.EventHandler(this.backToStartScreenButton_Click);
+            // 
             // ChooseCharacterScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 262);
+            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.backToStartScreenButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chooseCharacterButton);
             this.Controls.Add(this.terosRadioButton);
             this.Controls.Add(this.booteanRadioButton);
             this.Controls.Add(this.anunakRadioButton);
             this.Name = "ChooseCharacterScreenForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseCharacterScreen";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,5 +127,6 @@
         private System.Windows.Forms.Button chooseCharacterButton;
         private System.Windows.Forms.RadioButton terosRadioButton;
         private System.Windows.Forms.Label label1;
+        private Button backToStartScreenButton;
     }
 }
