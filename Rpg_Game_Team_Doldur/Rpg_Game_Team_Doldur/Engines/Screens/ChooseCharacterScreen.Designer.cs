@@ -31,52 +31,54 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
         /// </summary>
         private void InitializeComponent()
         {
-            this.anunakRadioButton = new System.Windows.Forms.RadioButton();
-            this.booteanRadioButton = new System.Windows.Forms.RadioButton();
-            this.terosRadioButton = new System.Windows.Forms.RadioButton();
+            this.warriorRadioButton = new System.Windows.Forms.RadioButton();
+            this.archerRadioButton = new System.Windows.Forms.RadioButton();
+            this.mageRadioButton = new System.Windows.Forms.RadioButton();
             this.chooseCharacterButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.backToStartScreenButton = new System.Windows.Forms.Button();
+            this.nameInput = new System.Windows.Forms.TextBox();
+            this.enterNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // anunakRadioButton
+            // warriorRadioButton
             // 
-            this.anunakRadioButton.AutoSize = true;
-            this.anunakRadioButton.Location = new System.Drawing.Point(55, 88);
-            this.anunakRadioButton.Name = "anunakRadioButton";
-            this.anunakRadioButton.Size = new System.Drawing.Size(62, 17);
-            this.anunakRadioButton.TabIndex = 0;
-            this.anunakRadioButton.TabStop = true;
-            this.anunakRadioButton.Text = "Anunak";
-            this.anunakRadioButton.UseVisualStyleBackColor = true;
+            this.warriorRadioButton.AutoSize = true;
+            this.warriorRadioButton.Location = new System.Drawing.Point(55, 88);
+            this.warriorRadioButton.Name = "warriorRadioButton";
+            this.warriorRadioButton.Size = new System.Drawing.Size(59, 17);
+            this.warriorRadioButton.TabIndex = 0;
+            this.warriorRadioButton.TabStop = true;
+            this.warriorRadioButton.Text = "Warrior";
+            this.warriorRadioButton.UseVisualStyleBackColor = true;
             // 
-            // booteanRadioButton
+            // archerRadioButton
             // 
-            this.booteanRadioButton.AutoSize = true;
-            this.booteanRadioButton.Location = new System.Drawing.Point(168, 88);
-            this.booteanRadioButton.Name = "booteanRadioButton";
-            this.booteanRadioButton.Size = new System.Drawing.Size(65, 17);
-            this.booteanRadioButton.TabIndex = 1;
-            this.booteanRadioButton.TabStop = true;
-            this.booteanRadioButton.Text = "Bootean";
-            this.booteanRadioButton.UseVisualStyleBackColor = true;
+            this.archerRadioButton.AutoSize = true;
+            this.archerRadioButton.Location = new System.Drawing.Point(344, 88);
+            this.archerRadioButton.Name = "archerRadioButton";
+            this.archerRadioButton.Size = new System.Drawing.Size(56, 17);
+            this.archerRadioButton.TabIndex = 1;
+            this.archerRadioButton.TabStop = true;
+            this.archerRadioButton.Text = "Archer";
+            this.archerRadioButton.UseVisualStyleBackColor = true;
             // 
-            // terosRadioButton
+            // mageRadioButton
             // 
-            this.terosRadioButton.AutoSize = true;
-            this.terosRadioButton.Location = new System.Drawing.Point(283, 88);
-            this.terosRadioButton.Name = "terosRadioButton";
-            this.terosRadioButton.Size = new System.Drawing.Size(52, 17);
-            this.terosRadioButton.TabIndex = 2;
-            this.terosRadioButton.TabStop = true;
-            this.terosRadioButton.Text = "Teros";
-            this.terosRadioButton.UseVisualStyleBackColor = true;
+            this.mageRadioButton.AutoSize = true;
+            this.mageRadioButton.Location = new System.Drawing.Point(594, 88);
+            this.mageRadioButton.Name = "mageRadioButton";
+            this.mageRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.mageRadioButton.TabIndex = 2;
+            this.mageRadioButton.TabStop = true;
+            this.mageRadioButton.Text = "Mage";
+            this.mageRadioButton.UseVisualStyleBackColor = true;
             // 
             // chooseCharacterButton
             // 
-            this.chooseCharacterButton.Location = new System.Drawing.Point(158, 176);
+            this.chooseCharacterButton.Location = new System.Drawing.Point(12, 475);
             this.chooseCharacterButton.Name = "chooseCharacterButton";
-            this.chooseCharacterButton.Size = new System.Drawing.Size(75, 39);
+            this.chooseCharacterButton.Size = new System.Drawing.Size(250, 50);
             this.chooseCharacterButton.TabIndex = 3;
             this.chooseCharacterButton.Text = "Choose character";
             this.chooseCharacterButton.UseVisualStyleBackColor = true;
@@ -85,34 +87,55 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(101, 32);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(25, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 13);
+            this.label1.Size = new System.Drawing.Size(333, 24);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Choose the race of your character";
+            this.label1.Text = "Choose the class of your character";
             // 
             // backToStartScreenButton
             // 
-            this.backToStartScreenButton.Location = new System.Drawing.Point(283, 176);
+            this.backToStartScreenButton.Location = new System.Drawing.Point(572, 475);
             this.backToStartScreenButton.Name = "backToStartScreenButton";
-            this.backToStartScreenButton.Size = new System.Drawing.Size(75, 23);
+            this.backToStartScreenButton.Size = new System.Drawing.Size(200, 50);
             this.backToStartScreenButton.TabIndex = 5;
             this.backToStartScreenButton.Text = "Back";
             this.backToStartScreenButton.UseVisualStyleBackColor = true;
             this.backToStartScreenButton.Click += new System.EventHandler(this.backToStartScreenButton_Click);
             // 
-            // ChooseCharacterScreenForm
+            // nameInput
+            // 
+            this.nameInput.Location = new System.Drawing.Point(298, 475);
+            this.nameInput.Multiline = true;
+            this.nameInput.Name = "nameInput";
+            this.nameInput.Size = new System.Drawing.Size(230, 35);
+            this.nameInput.TabIndex = 6;
+            // 
+            // enterNameLabel
+            // 
+            this.enterNameLabel.AutoSize = true;
+            this.enterNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.enterNameLabel.Location = new System.Drawing.Point(303, 432);
+            this.enterNameLabel.Name = "enterNameLabel";
+            this.enterNameLabel.Size = new System.Drawing.Size(217, 24);
+            this.enterNameLabel.TabIndex = 7;
+            this.enterNameLabel.Text = "Enter Character Name";
+            // 
+            // ChooseCharacterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.enterNameLabel);
+            this.Controls.Add(this.nameInput);
             this.Controls.Add(this.backToStartScreenButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chooseCharacterButton);
-            this.Controls.Add(this.terosRadioButton);
-            this.Controls.Add(this.booteanRadioButton);
-            this.Controls.Add(this.anunakRadioButton);
-            this.Name = "ChooseCharacterScreenForm";
+            this.Controls.Add(this.mageRadioButton);
+            this.Controls.Add(this.archerRadioButton);
+            this.Controls.Add(this.warriorRadioButton);
+            this.Name = "ChooseCharacterScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseCharacterScreen";
             this.ResumeLayout(false);
@@ -122,11 +145,13 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
 
         #endregion
 
-        private System.Windows.Forms.RadioButton anunakRadioButton;
-        private System.Windows.Forms.RadioButton booteanRadioButton;
+        private System.Windows.Forms.RadioButton warriorRadioButton;
+        private System.Windows.Forms.RadioButton archerRadioButton;
         private System.Windows.Forms.Button chooseCharacterButton;
-        private System.Windows.Forms.RadioButton terosRadioButton;
+        private System.Windows.Forms.RadioButton mageRadioButton;
         private System.Windows.Forms.Label label1;
         private Button backToStartScreenButton;
+        private TextBox nameInput;
+        private Label enterNameLabel;
     }
 }
