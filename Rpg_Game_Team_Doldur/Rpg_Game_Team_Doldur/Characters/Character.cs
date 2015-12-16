@@ -81,6 +81,5 @@ namespace Rpg_Game_Team_Doldur.Characters
             throw new NotImplementedException();
         }
 
-        public abstract void Heal();
     }
 }
