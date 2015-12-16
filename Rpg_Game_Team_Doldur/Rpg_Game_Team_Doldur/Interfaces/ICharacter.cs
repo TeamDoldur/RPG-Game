@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rpg_Game_Team_Doldur.Interfaces
 {
-    public interface ICharacter : IAttack, IHeal, IDestroyable
+    public interface ICharacter : IAttack, IDestroyable
     {
         Position Position { get; }
     }

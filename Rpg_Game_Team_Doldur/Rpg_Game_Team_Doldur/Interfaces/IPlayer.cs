@@ -9,6 +9,6 @@ namespace Rpg_Game_Team_Doldur.Interfaces
 {
     public interface IPlayer : ICharacter, ICollect
     {
-        PlayerRace Race { get; }
+        PlayerClass Class { get; }
     }
 }
