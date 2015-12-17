@@ -126,12 +126,12 @@
   <ItemGroup>
     <Content Include="Resources\BOV_Warrior.png" />
     <Content Include="Resources\GoblinCombatSprite.png" />
-    <Content Include="Resources\GrassTile.png" />
+    <None Include="Resources\GrassTile.png" />
     <Content Include="Resources\MonsterSprite.png" />
     <Content Include="Resources\PlayerKnightCombatSprite.png" />
     <Content Include="Resources\PlayerPartySprite.png" />
     <Content Include="Resources\Rogue.png" />
-    <Content Include="Resources\WaterTile.png" />
+    <None Include="Resources\WaterTile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

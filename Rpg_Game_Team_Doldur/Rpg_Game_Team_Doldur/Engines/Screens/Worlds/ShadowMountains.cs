@@ -243,7 +243,10 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 
             Draw();
         }
-
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 
