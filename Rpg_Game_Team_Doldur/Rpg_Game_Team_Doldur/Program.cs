@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Planets;
-using Heroes;
+using Rpg_Game_Team_Doldur.Engines.Screens;
 
 namespace Rpg_Game_Team_Doldur
 {
     static class Program
     {
+        public static StartScreen InitialScreen { get; private set; }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,9 +16,9 @@ namespace Rpg_Game_Team_Doldur
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Planet());
-            
-           
+            InitialScreen = new StartScreen();
+            InitialScreen.Show();
+            Application.Run();
         }
     }
 }

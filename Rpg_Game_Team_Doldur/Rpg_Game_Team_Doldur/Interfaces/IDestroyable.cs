@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Rpg_Game_Team_Doldur.Interfaces
 {
-    interface ICreature
+    public interface IDestroyable
     {
+        int Health { get; }
+        bool IsAlive { get; }
     }
 }

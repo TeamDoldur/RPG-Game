@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common
+namespace Rpg_Game_Team_Doldur.Common
 {
-    public enum Race
+    class WorldMap
     {
-        Anunak,
-        Bootean,
-        Buttah,
-        Earthling,
-        Teros
     }
 }
