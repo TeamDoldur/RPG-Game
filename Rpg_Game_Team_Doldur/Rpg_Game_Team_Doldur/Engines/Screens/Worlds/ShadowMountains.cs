@@ -76,7 +76,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
         public void LoadMap(string mapName)
         {
             mapTiles.Clear();
-            StreamReader reader = new StreamReader(@"MapTileData\" + mapName + ".txt");
+            StreamReader reader = new StreamReader(@"..\..\Resources\Maps\ShadowMountains\" + mapName + ".txt");
 
             int y = 0;
 
