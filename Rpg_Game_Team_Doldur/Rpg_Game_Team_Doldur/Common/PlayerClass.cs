@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public enum Gender
+    public enum PlayerClass
     {
-        Male,
-        Female,
+        Warrior,
+        Archer,
+        Mage
     }
 }
