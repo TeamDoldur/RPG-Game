@@ -103,6 +103,16 @@ namespace Rpg_Game_Team_Doldur.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mage {
+            get {
+                object obj = ResourceManager.GetObject("Mage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MonsterSprite {
             get {
                 object obj = ResourceManager.GetObject("MonsterSprite", resourceCulture);

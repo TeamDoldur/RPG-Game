@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,27 +15,20 @@ namespace Rpg_Game_Team_Doldur.Characters
         private int damage;
         private int health;
 
-        protected Character(int id, Position position, int damage, int health)
+        protected Character(int id, Position position, int damage, int health, Image image)
             : base(id)
         {
             this.Position = position;
             this.Damage = damage;
             this.Health = health;
             this.IsAlive = true;
+            VisualizePlayer(Position.X,Position.Y,image);
         }
 
         public Position Position
         {
             get { return this.position; }
-            set
-            {
-                if (value.X < 0 || value .Y < 0)
-                {
-                    throw new ArgumentOutOfRangeException("postion", "Position is out of range!");
-                }
-
-                this.position = value;
-            }
+            set { this.position = value; }
         }
 
         public PictureBox SpritePictureBox { get; set; }
@@ -77,7 +71,16 @@ namespace Rpg_Game_Team_Doldur.Characters
             }
         }
 
-        public abstract void VisualizePlayer(int posX, int posY);
+        void VisualizePlayer(int posX, int posY, Image image)
+        {
+            this.SpritePictureBox = new PictureBox();
+            this.SpritePictureBox.Image = image;
+            this.SpritePictureBox.BackColor = Color.Transparent;
+            this.SpritePictureBox.Width = 40;
+            this.SpritePictureBox.Height = 40;
+            this.SpritePictureBox.Show();
+            this.SpritePictureBox.Location = new Point(posX, posY);
+        }
 
         public bool IsAlive { get; private set; }
 

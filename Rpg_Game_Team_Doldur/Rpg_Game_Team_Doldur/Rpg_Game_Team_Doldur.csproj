@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\Classes\Mage.cs" />
     <Compile Include="Characters\Classes\Warrior.cs" />
     <Compile Include="Characters\Enemies\Bandit.cs" />
     <Compile Include="Characters\Enemies\Enemy.cs" />
@@ -135,6 +136,7 @@
     <Content Include="Resources\BOV_Warrior.png" />
     <Content Include="Resources\GoblinCombatSprite.png" />
     <None Include="Resources\GrassTile.png" />
+    <None Include="Resources\Mage.png" />
     <Content Include="Resources\MonsterSprite.png" />
     <Content Include="Resources\PlayerKnightCombatSprite.png" />
     <Content Include="Resources\PlayerPartySprite.png" />

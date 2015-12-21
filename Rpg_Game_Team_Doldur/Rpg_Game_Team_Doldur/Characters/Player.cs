@@ -15,23 +15,11 @@
         private string name;
         private int energyPoints;
 
-        protected Player(int id, Position position, int damage, int health, string name, int energyPoints)
-            :base(id, position, damage, health)
+        protected Player(int id, Position position, int damage, int health, string name, int energyPoints, Image image)
+            :base(id, position, damage, health, image)
         {
             this.Name = name;
             this.EnergyPoints = energyPoints;
-            this.VisualizePlayer(position.X, position.Y);
-        }
-
-        public override void VisualizePlayer(int posX, int posY)
-        {
-            base.SpritePictureBox = new PictureBox();
-            base.SpritePictureBox.Image = Resources.BOV_Warrior;
-            base.SpritePictureBox.BackColor = Color.Transparent;
-            base.SpritePictureBox.Width = 40;
-            base.SpritePictureBox.Height = 40;
-            base.SpritePictureBox.Show();
-            base.SpritePictureBox.Location = new Point(posX, posY);
         }
 
         public string Name

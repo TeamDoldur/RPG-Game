@@ -21,29 +21,14 @@ namespace Rpg_Game_Team_Doldur
         public int X
         {
             get { return this.x; }
-            private set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("x", "X coordinate must not be less than 0.");
-                }
+            private set { this.x = value;}
 
-                this.x = value;
-            }
         }
 
         public int Y
         {
             get { return this.y; }
-            private set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("y", "Y coordinate must not be less than 0.");
-                }
-
-                this.y = value;
-            }
+            private set { this.y = value; }
         }
     }
 }

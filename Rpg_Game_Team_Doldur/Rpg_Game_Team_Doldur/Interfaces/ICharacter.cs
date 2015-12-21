@@ -13,7 +13,6 @@ namespace Rpg_Game_Team_Doldur.Interfaces
 
         PictureBox SpritePictureBox { get; }
 
-        void VisualizePlayer(int posX, int posY);
 
     }
 }

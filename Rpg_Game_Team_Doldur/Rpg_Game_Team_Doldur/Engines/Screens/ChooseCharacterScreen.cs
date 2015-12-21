@@ -49,9 +49,9 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
                     CreatePlayerAndStartGame(player);
                 }
 
-                else if (this.warriorRadioButton.Checked)
+                else if (this.mageRadioButton.Checked)
                 {
-                    Player player = new Warrior(1, new Position(10, 10), nameInput.Text);
+                    Player player = new Mage(1, new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
                 }
             }
