@@ -29,7 +29,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
                 erroLabel.Text = "You must enter character name before you press \"Choose character\" button";
                 erroLabel.Enabled = true;
                 erroLabel.Visible = true;
-                var labelLocation = new Point(200,370);
+                var labelLocation = new Point(200,450);
                 erroLabel.Font = new Font(FontFamily.GenericSerif, 10);
                 erroLabel.Location = labelLocation;
                 erroLabel.AutoSize = true;
@@ -44,9 +44,9 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
                    
                 }
 
-                else if (this.warriorRadioButton.Checked)
+                else if (this.archerRadioButton.Checked)
                 {
-                    Player player = new Warrior(1, new Position(10, 10), nameInput.Text);
+                    Player player = new Archer(1, new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
                 }
 

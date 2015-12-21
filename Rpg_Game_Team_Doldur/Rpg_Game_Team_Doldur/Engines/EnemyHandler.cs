@@ -27,9 +27,10 @@ namespace Rpg_Game_Team_Doldur.Engines
         {
             this.enemyList = new List<Enemy>();
             StreamReader reader = new StreamReader(@"..\..\Resources\Maps\ShadowMountains\EnemiesLocation\" + map + ".txt");
-            string[] enemySprites = new string[2];
+            string[] enemySprites = new string[3];
             enemySprites[0] = "None";
             enemySprites[1] = "Bandit";
+            enemySprites[2] = "Gargoyle";
 
             int y = 0;
 

@@ -21,3 +21,4 @@ D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.pdb
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache

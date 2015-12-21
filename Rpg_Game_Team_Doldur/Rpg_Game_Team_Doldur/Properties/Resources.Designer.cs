@@ -63,6 +63,16 @@ namespace Rpg_Game_Team_Doldur.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Archer {
+            get {
+                object obj = ResourceManager.GetObject("Archer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bandits {
             get {
                 object obj = ResourceManager.GetObject("Bandits", resourceCulture);
@@ -76,6 +86,26 @@ namespace Rpg_Game_Team_Doldur.Properties {
         internal static System.Drawing.Bitmap BOV_Warrior {
             get {
                 object obj = ResourceManager.GetObject("BOV_Warrior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ElfBig {
+            get {
+                object obj = ResourceManager.GetObject("ElfBig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gargoyle {
+            get {
+                object obj = ResourceManager.GetObject("Gargoyle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +136,16 @@ namespace Rpg_Game_Team_Doldur.Properties {
         internal static System.Drawing.Bitmap Mage {
             get {
                 object obj = ResourceManager.GetObject("Mage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MageBig {
+            get {
+                object obj = ResourceManager.GetObject("MageBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +186,16 @@ namespace Rpg_Game_Team_Doldur.Properties {
         internal static System.Drawing.Bitmap Rogue {
             get {
                 object obj = ResourceManager.GetObject("Rogue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WarriorBig {
+            get {
+                object obj = ResourceManager.GetObject("WarriorBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

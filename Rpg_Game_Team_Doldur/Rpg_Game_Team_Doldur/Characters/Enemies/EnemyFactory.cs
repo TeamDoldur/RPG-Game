@@ -22,6 +22,9 @@ namespace Rpg_Game_Team_Doldur.Characters.Enemies
                 case "Bandit":
                     return new Bandit(id,position);
                     break;
+                case "Gargoyle":
+                    return new Gargoyle(id, position);
+                    break;
                 default:
                     return null;
             }
