@@ -9,10 +9,9 @@ D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team
 D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
 D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
 D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.CombatEngine.resources
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe.config
-D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
-D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
-D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
+D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.CombatEngine.resources
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.ChooseCharacterScreen.resources
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.StartScreen.resources
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.Worlds.ShadowMountains.resources
@@ -20,5 +19,5 @@ D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.pdb
-D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.CombatEngine.resources
-D:\TW\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.CombatEngine.resources
+D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
+D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
