@@ -45,10 +45,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Character.cs" />
-    <Compile Include="Characters\Classes\Warrior.cs" />
+    <Compile Include="Characters\PlayerCharacters\Warrior.cs" />
+    <Compile Include="Characters\Enemies\Bandit.cs" />
+    <Compile Include="Characters\Enemies\Enemy.cs" />
+    <Compile Include="Characters\Enemies\EnemyFactory.cs" />
     <Compile Include="Characters\Player.cs" />
     <Compile Include="Dependencies\TextBoxReader.cs" />
     <Compile Include="Dependencies\Tiles.cs" />
+    <Compile Include="Engines\CollisionDetection.cs" />
     <Compile Include="Engines\CombatEngine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +60,7 @@
       <DependentUpon>CombatEngine.cs</DependentUpon>
     </Compile>
     <Compile Include="Engines\CreatePlayer.cs" />
+    <Compile Include="Engines\EnemyHandler.cs" />
     <Compile Include="Engines\Screens\ChooseCharacterScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +83,7 @@
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\ICollect.cs" />
+    <Compile Include="Interfaces\ICollision.cs" />
     <Compile Include="Interfaces\IDestroyable.cs" />
     <Compile Include="Interfaces\IHeal.cs" />
     <Compile Include="Interfaces\ILevel.cs" />
@@ -89,6 +95,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartGameEventArgs.cs" />
+    <EmbeddedResource Include="Engines\CombatEngine.resx">
+      <DependentUpon>CombatEngine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Engines\Screens\ChooseCharacterScreen.resx">
       <DependentUpon>ChooseCharacterScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +131,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Bandits.png" />
     <Content Include="Resources\BOV_Warrior.png" />
     <Content Include="Resources\GoblinCombatSprite.png" />
     <None Include="Resources\GrassTile.png" />
