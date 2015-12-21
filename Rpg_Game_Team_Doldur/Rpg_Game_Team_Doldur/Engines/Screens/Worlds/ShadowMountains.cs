@@ -30,7 +30,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
             InitializeComponent();
             this.Player = player;
             mapTiles = new List<Tile>();
-            this.collisionDetection = new CollisionDetection();
+            this.collisionDetection = new CollisionDetection(this, new CombatEngine());
             this.enemyList = new List<Enemy>();
             InitializeLevel();
             Draw();
@@ -253,6 +253,11 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
                     }
                 }
 
+                foreach (var enemy in this.enemyList)
+                {
+                    this.collisionDetection.DetectCollision(this.Player,enemy);
+                }
+                
                 //foreach (var enemy in collisionDetection.UnitsInMap)
                 //{
                 //    if (!(enemy is Player))

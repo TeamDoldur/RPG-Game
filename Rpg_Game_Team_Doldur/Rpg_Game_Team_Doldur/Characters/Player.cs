@@ -71,6 +71,7 @@
         {
             Point currLoc = new Point(this.SpritePictureBox.Location.X, this.SpritePictureBox.Location.Y);
             this.SpritePictureBox.Location = new Point(currLoc.X + x, currLoc.Y + y);
+            base.Position = new Position(currLoc.X + x, currLoc.Y + y);
            
         }
 

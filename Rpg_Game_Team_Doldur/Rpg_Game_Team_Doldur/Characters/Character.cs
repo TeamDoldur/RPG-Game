@@ -26,7 +26,7 @@ namespace Rpg_Game_Team_Doldur.Characters
         public Position Position
         {
             get { return this.position; }
-            private set
+            set
             {
                 if (value.X < 0 || value .Y < 0)
                 {
