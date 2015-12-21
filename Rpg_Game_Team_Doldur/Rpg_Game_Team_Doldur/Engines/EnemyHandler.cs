@@ -17,7 +17,6 @@ namespace Rpg_Game_Team_Doldur.Engines
         public EnemyHandler()
         {
             this.enemyList = new List<Enemy>();
-           
         }
 
         public IEnumerable<Enemy> EnemyList

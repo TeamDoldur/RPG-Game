@@ -1,6 +1,4 @@
-﻿using Rpg_Game_Team_Doldur.Characters.Enemies;
-
-namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
+﻿namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 {
     using System.Collections.Generic;
     using System.Drawing;
@@ -8,6 +6,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
     using System.Windows.Forms;
     using Characters;
     using Dependencies;
+    using Characters.Enemies;
 
     public partial class ShadowMountains : Form
     {
@@ -38,11 +37,9 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
             
             
         }
-
-
+        
         public Player Player { get; private set; }
-
-
+        
         public void InitializeLevel()
         {
             worldMapSpritePb = new PictureBox();
@@ -58,13 +55,8 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 
             LoadNewMap(0, 0);
 
-           
             this.Controls.Add(this.Player.SpritePictureBox);
             this.Player.SpritePictureBox.Parent = this.worldMapSpritePb;
-
-            
-           
-
         }
 
         void LoadNewMap(int xMove, int yMove)
@@ -79,12 +71,10 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
             // LoadMonstersOnMap();
             //LoadFriendlyNPCsOnMap();
         }
-
-
+        
         public void LoadMap(string mapName)
         {
             mapTiles.Clear();
-            
             
             StreamReader reader = new StreamReader(@"..\..\Resources\Maps\ShadowMountains\" + mapName + ".txt");
             this.enemyHandler = new EnemyHandler();
@@ -118,11 +108,11 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 
                 y++;
             }
+
             this.enemyHandler.LoadEnemies(mapName);
             this.enemyList = this.enemyHandler.EnemyList;
             this.LoadEnemies();
            
-
             reader.Close();
         }
 
@@ -143,6 +133,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
                 enemy.SpritePictureBox.Parent = null;
             }
         }
+
         void Draw()
         {
             Graphics device;
@@ -200,7 +191,6 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 
         private void ShadowMountains_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (!inCombat)
             {
                 Point p = new Point(0, 0);

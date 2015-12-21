@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Rpg_Game_Team_Doldur.Characters;
-using Rpg_Game_Team_Doldur.Characters.Classes;
+using Rpg_Game_Team_Doldur.Characters.PlayerCharacters;
 using Rpg_Game_Team_Doldur.Engines.Screens.Worlds;
 
 namespace Rpg_Game_Team_Doldur.Engines.Screens

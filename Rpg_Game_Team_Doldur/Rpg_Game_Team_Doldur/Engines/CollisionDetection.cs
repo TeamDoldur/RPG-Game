@@ -9,7 +9,6 @@ namespace Rpg_Game_Team_Doldur.Engines
 {
     public class CollisionDetection : ICollision
     {
-
         public CollisionDetection(Form level, Form combatForm)
         {
             this.Form = level;
@@ -29,7 +28,6 @@ namespace Rpg_Game_Team_Doldur.Engines
                 CombatForm.Show();
                 CombatForm.Activate();
                 this.Form.Hide();
-          
             }
         }
     }
