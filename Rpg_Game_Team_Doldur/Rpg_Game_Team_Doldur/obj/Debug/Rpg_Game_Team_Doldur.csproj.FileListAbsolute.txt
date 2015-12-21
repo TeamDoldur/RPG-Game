@@ -22,3 +22,15 @@ D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
 D:\Personal\Git\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe.config
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.exe
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.pdb
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csprojResolveAssemblyReference.cache
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.CombatEngine.resources
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.ChooseCharacterScreen.resources
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.StartScreen.resources
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Engines.Screens.Worlds.ShadowMountains.resources
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.Properties.Resources.resources
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\obj\Debug\Rpg_Game_Team_Doldur.csproj.GenerateResource.Cache
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.exe
+D:\TEAMWORK\RPG-Game\Rpg_Game_Team_Doldur\Rpg_Game_Team_Doldur\bin\Debug\Rpg_Game_Team_Doldur.pdb

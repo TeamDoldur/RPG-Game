@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Rpg_Game_Team_Doldur.Characters;
-using Rpg_Game_Team_Doldur.Characters;
-using Rpg_Game_Team_Doldur.Characters.Classes;
-using Rpg_Game_Team_Doldur.Engines.Screens.Worlds;
-
-namespace Rpg_Game_Team_Doldur.Engines.Screens
+﻿namespace Rpg_Game_Team_Doldur.Engines.Screens
 {
+    using System;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using Characters;
+    using Characters.PlayerCharacters;
+    using Worlds;
+
     public partial class ChooseCharacterScreen : Form
     {
         public ChooseCharacterScreen()
@@ -39,20 +32,19 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
             {
                 if (this.warriorRadioButton.Checked)
                 {
-                    Player player = new Warrior(1, new Position(0, 0), nameInput.Text);
+                    Player player = new Warrior(new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
-                   
                 }
 
                 else if (this.archerRadioButton.Checked)
                 {
-                    Player player = new Archer(1, new Position(0, 0), nameInput.Text);
+                    Player player = new Archer(new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
                 }
 
                 else if (this.mageRadioButton.Checked)
                 {
-                    Player player = new Mage(1, new Position(0, 0), nameInput.Text);
+                    Player player = new Mage(new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
                 }
             }

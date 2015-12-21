@@ -12,7 +12,5 @@ namespace Rpg_Game_Team_Doldur.Interfaces
         Position Position { get; }
 
         PictureBox SpritePictureBox { get; }
-
-
     }
 }

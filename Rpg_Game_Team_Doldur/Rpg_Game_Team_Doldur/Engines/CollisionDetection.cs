@@ -27,7 +27,6 @@ namespace Rpg_Game_Team_Doldur.Engines
                 CombatForm.Location = this.Form.Location;
                 CombatForm.Show();
                 CombatForm.Activate();
-                this.Form.Hide();
             }
         }
     }

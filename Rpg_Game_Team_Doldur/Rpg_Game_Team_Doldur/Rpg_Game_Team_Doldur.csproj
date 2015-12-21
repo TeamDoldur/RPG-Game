@@ -62,7 +62,6 @@
     <Compile Include="Engines\CombatEngine.Designer.cs">
       <DependentUpon>CombatEngine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Engines\CreatePlayer.cs" />
     <Compile Include="Engines\EnemyHandler.cs" />
     <Compile Include="Engines\Screens\ChooseCharacterScreen.cs">
       <SubType>Form</SubType>
@@ -82,22 +81,15 @@
     <Compile Include="Engines\Screens\Worlds\ShadowMountains.Designer.cs">
       <DependentUpon>ShadowMountains.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameObject.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
-    <Compile Include="Interfaces\ICollect.cs" />
     <Compile Include="Interfaces\ICollision.cs" />
     <Compile Include="Interfaces\IDestroyable.cs" />
     <Compile Include="Interfaces\IHeal.cs" />
-    <Compile Include="Interfaces\ILevel.cs" />
-    <Compile Include="Interfaces\IMech.cs" />
-    <Compile Include="Interfaces\IPassiveSkill.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
-    <Compile Include="Interfaces\ISkill.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartGameEventArgs.cs" />
     <EmbeddedResource Include="Engines\CombatEngine.resx">
       <DependentUpon>CombatEngine.cs</DependentUpon>
     </EmbeddedResource>

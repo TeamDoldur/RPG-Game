@@ -1,28 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Rpg_Game_Team_Doldur.Interfaces;
-
-namespace Rpg_Game_Team_Doldur.Characters
+﻿namespace Rpg_Game_Team_Doldur.Characters
 {
-    public abstract class Character : GameObject, ICharacter
+    using System;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using Interfaces;
+
+    public abstract class Character : ICharacter
     {
         private Position position;
         private int damage;
         private int health;
 
-        protected Character(int id, Position position, int damage, int health, Image image)
-            : base(id)
+        protected Character(Position position, int health, int damage, Image image)
         {
             this.Position = position;
             this.Damage = damage;
             this.Health = health;
             this.IsAlive = true;
-            VisualizePlayer(Position.X,Position.Y,image);
+            this.VisualizePlayer(Position.X,Position.Y,image);
         }
 
         public Position Position
@@ -32,6 +27,7 @@ namespace Rpg_Game_Team_Doldur.Characters
         }
 
         public PictureBox SpritePictureBox { get; set; }
+
         public int Damage
         {
             get { return this.damage; }
@@ -71,7 +67,7 @@ namespace Rpg_Game_Team_Doldur.Characters
             }
         }
 
-        void VisualizePlayer(int posX, int posY, Image image)
+        public void VisualizePlayer(int posX, int posY, Image image)
         {
             this.SpritePictureBox = new PictureBox();
             this.SpritePictureBox.Image = image;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,29 +7,22 @@ using System.Threading.Tasks;
 
 namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
-    class EnemyFactory
+    public class EnemyFactory
     {
-        public EnemyFactory(string enemyType, int id, Position position)
-        {
-            this.Enemy = CreateEnemy(enemyType, id, position);
-        }
-
-        public Enemy Enemy { get; private set; }
-
-        private Enemy CreateEnemy(string type, int id, Position position)
+        public Enemy CreateEnemy(string type, Position position)
         {
             switch (type)
             {
                 case "Bandit":
-                    return new Bandit(id,position);
+                    return new Bandit(position);
                     break;
                 case "Gargoyle":
-                    return new Gargoyle(id, position);
+                    return new Gargoyle(position);
                     break;
                 default:
-                    return null;
+                    return null; // TODO: need fixing if there is time
+                    throw new ArgumentException("There is no such enemy type.");
             }
         }
-
     }
 }

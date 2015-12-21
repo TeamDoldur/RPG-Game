@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rpg_Game_Team_Doldur.Interfaces
 {
-    public interface IPlayer : ICharacter, ICollect
+    public interface IPlayer : ICharacter
     {
     }
 }

@@ -22,7 +22,6 @@ namespace Rpg_Game_Team_Doldur
         {
             get { return this.x; }
             private set { this.x = value;}
-
         }
 
         public int Y

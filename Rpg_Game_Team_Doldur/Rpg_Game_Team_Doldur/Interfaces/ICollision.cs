@@ -7,6 +7,5 @@ namespace Rpg_Game_Team_Doldur.Interfaces
     {
         IEnumerable<ICharacter> UnitsInMap { get; }
         void DetectCollision(ICharacter player, ICharacter enemy);
-
     }
 }

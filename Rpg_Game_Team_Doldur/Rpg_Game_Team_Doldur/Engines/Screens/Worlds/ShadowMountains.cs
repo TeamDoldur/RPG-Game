@@ -10,7 +10,6 @@
 
     public partial class ShadowMountains : Form
     {
-        private Player player;
         private Graphics graphics;
         private int mapX;
         private int mapY;
@@ -22,8 +21,7 @@
         private CollisionDetection collisionDetection;
         private EnemyHandler enemyHandler;
         private IEnumerable<Enemy> enemyList;
-
-
+        
         public ShadowMountains(Player player)
         {
             InitializeComponent();
@@ -33,9 +31,6 @@
             this.enemyList = new List<Enemy>();
             InitializeLevel();
             Draw();
-           
-            
-            
         }
         
         public Player Player { get; private set; }

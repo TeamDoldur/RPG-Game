@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rpg_Game_Team_Doldur.Characters.Enemies
+﻿namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
+    using System.Drawing;
+
     public abstract class Enemy : Character
     {
-        protected Enemy(int id, Position position, int damage, int health, Image image)
-            : base(id, position, damage, health, image)
+        protected Enemy(Position position, int health, int damage, Image image)
+            : base(position, health, damage, image)
         {
-
         }
     }
 }

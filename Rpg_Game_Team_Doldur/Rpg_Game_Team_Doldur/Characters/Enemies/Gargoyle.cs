@@ -8,14 +8,13 @@ namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
     public class Gargoyle : Enemy
     {
-        private const int damage = 40;
-        private const int health = 200;
-        private static Image img = Properties.Resources.Gargoyle;
+        private const int GargoyleDamage = 40;
+        private const int GargoyleHealth = 200;
+        private static readonly Image Img = Properties.Resources.Gargoyle;
 
-        public Gargoyle(int id, Position position)
-            : base(id, position, damage, health, img)
+        public Gargoyle(Position position)
+            : base(position, GargoyleHealth, GargoyleDamage, Img)
         {
-           
         }
 
     }

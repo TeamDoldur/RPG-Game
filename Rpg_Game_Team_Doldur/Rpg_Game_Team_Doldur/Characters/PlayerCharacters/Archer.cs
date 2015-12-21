@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Rpg_Game_Team_Doldur.Characters.Classes
+namespace Rpg_Game_Team_Doldur.Characters.PlayerCharacters
 {
     public class Archer : Player
     {
-         private const int initialDamage = 305;
-         private const int initialHealth = 220;
-         private const int initialEnergyPoints = 130;
-         private static Image img = Properties.Resources.Archer;
+         private const int InitialDamage = 305;
+         private const int InitialHealth = 220;
+         private const int InitialEnergyPoints = 130;
+         private static readonly Image Img = Properties.Resources.Archer;
 
-         public Archer(int id, Position position, string name)
-             : base(id, position, initialDamage, initialHealth, name, initialEnergyPoints, img)
+         public Archer(Position position, string name)
+             : base(position, InitialHealth, InitialDamage, name, InitialEnergyPoints, Img)
         {
            
         }
