@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Rpg_Game_Team_Doldur.Interfaces;
 
 namespace Rpg_Game_Team_Doldur.Characters
@@ -36,6 +37,7 @@ namespace Rpg_Game_Team_Doldur.Characters
             }
         }
 
+        public PictureBox SpritePictureBox { get; set; }
         public int Damage
         {
             get { return this.damage; }
@@ -74,6 +76,8 @@ namespace Rpg_Game_Team_Doldur.Characters
                 }
             }
         }
+
+        public abstract void VisualizePlayer(int posX, int posY);
 
         public bool IsAlive { get; private set; }
 

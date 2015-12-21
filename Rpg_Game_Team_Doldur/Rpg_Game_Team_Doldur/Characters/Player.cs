@@ -20,18 +20,18 @@
         {
             this.Name = name;
             this.EnergyPoints = energyPoints;
-            this.VisualizePlayer();
+            this.VisualizePlayer(position.X, position.Y);
         }
 
-        private void VisualizePlayer()
+        public override void VisualizePlayer(int posX, int posY)
         {
-            this.SpritePictureBox = new PictureBox();
-            this.SpritePictureBox.Image = Resources.BOV_Warrior;
-            this.SpritePictureBox.BackColor = Color.Transparent;
-            this.SpritePictureBox.Width = 40;
-            this.SpritePictureBox.Height = 40;
-            this.SpritePictureBox.Show();
-            this.SpritePictureBox.Location = new Point(40, 0);
+            base.SpritePictureBox = new PictureBox();
+            base.SpritePictureBox.Image = Resources.BOV_Warrior;
+            base.SpritePictureBox.BackColor = Color.Transparent;
+            base.SpritePictureBox.Width = 40;
+            base.SpritePictureBox.Height = 40;
+            base.SpritePictureBox.Show();
+            base.SpritePictureBox.Location = new Point(posX, posY);
         }
 
         public string Name
@@ -47,7 +47,7 @@
             }
         }
 
-        public PictureBox SpritePictureBox { get; set; }
+        
 
         public int EnergyPoints
         {

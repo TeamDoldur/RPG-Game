@@ -38,7 +38,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
             {
                 if (this.warriorRadioButton.Checked)
                 {
-                    Player player = new Warrior(1, new Position(10, 10), nameInput.Text);
+                    Player player = new Warrior(1, new Position(0, 0), nameInput.Text);
                     CreatePlayerAndStartGame(player);
                    
                 }
