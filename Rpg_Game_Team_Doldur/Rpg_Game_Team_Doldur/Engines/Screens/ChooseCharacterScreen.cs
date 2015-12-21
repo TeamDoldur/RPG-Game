@@ -55,10 +55,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
                     CreatePlayerAndStartGame(player);
                 }
             }
-
-           
         }
-
 
         private void CreatePlayerAndStartGame(Player player)
         {
@@ -80,7 +77,5 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
             Program.InitialScreen.Show();
             this.Hide();
         }
-
-
     }
 }

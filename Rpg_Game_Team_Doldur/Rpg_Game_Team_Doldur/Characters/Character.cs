@@ -19,6 +19,7 @@ namespace Rpg_Game_Team_Doldur.Characters
             this.Position = position;
             this.Damage = damage;
             this.Health = health;
+            this.IsAlive = true;
         }
 
         public Position Position
@@ -59,7 +60,7 @@ namespace Rpg_Game_Team_Doldur.Characters
                 {
                     if (value <= 0)
                     {
-                        throw new ArgumentOutOfRangeException("health", "Health cannot be negative!");
+                        throw new ArgumentOutOfRangeException("health", "Health cannot be non-positive!");
                     }
 
                     this.health = value;
@@ -80,6 +81,5 @@ namespace Rpg_Game_Team_Doldur.Characters
         {
             throw new NotImplementedException();
         }
-
     }
 }

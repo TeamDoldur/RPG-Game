@@ -47,8 +47,6 @@
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Classes\Warrior.cs" />
     <Compile Include="Characters\Player.cs" />
-    <Compile Include="Common\PlayerClass.cs" />
-    <Compile Include="Common\WorldMap.cs" />
     <Compile Include="Dependencies\TextBoxReader.cs" />
     <Compile Include="Dependencies\Tiles.cs" />
     <Compile Include="Engines\CombatEngine.cs">
@@ -90,7 +88,6 @@
     <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Skills\Skill.cs" />
     <Compile Include="StartGameEventArgs.cs" />
     <EmbeddedResource Include="Engines\Screens\ChooseCharacterScreen.resx">
       <DependentUpon>ChooseCharacterScreen.cs</DependentUpon>

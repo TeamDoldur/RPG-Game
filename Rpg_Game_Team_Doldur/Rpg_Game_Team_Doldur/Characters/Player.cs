@@ -1,42 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Common;
-using Rpg_Game_Team_Doldur.Interfaces;
-using Rpg_Game_Team_Doldur.Properties;
-
-namespace Rpg_Game_Team_Doldur.Characters
+﻿namespace Rpg_Game_Team_Doldur.Characters
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using Interfaces;
+    using Properties;
+
     public abstract class Player : Character, IHeal, IPlayer
     {
+        private const int MovingStepX = 10;
+        private const int MovingStepY = 10;
+
         private string name;
         private int energyPoints;
-        private const int movingStepX = 10;
-        private const int movingStepY = 10;
-        protected Player(int id, Position position, string name, int damage, int health, int energyPoints, PlayerClass playerClass)
+
+        protected Player(int id, Position position, int damage, int health, string name, int energyPoints)
             :base(id, position, damage, health)
         {
-            this.Class = playerClass;
             this.Name = name;
             this.EnergyPoints = energyPoints;
-            VisualizePlayer();
+            this.VisualizePlayer();
         }
-
 
         private void VisualizePlayer()
         {
-            this.Sprite = new PictureBox();
-            this.Sprite.Image = Resources.BOV_Warrior;
-            this.Sprite.BackColor = Color.Transparent;
-            this.Sprite.Width = 40;
-            this.Sprite.Height = 40;
-            this.Sprite.Show();
-            this.Sprite.Location = new Point(40, 0);
+            this.SpritePictureBox = new PictureBox();
+            this.SpritePictureBox.Image = Resources.BOV_Warrior;
+            this.SpritePictureBox.BackColor = Color.Transparent;
+            this.SpritePictureBox.Width = 40;
+            this.SpritePictureBox.Height = 40;
+            this.SpritePictureBox.Show();
+            this.SpritePictureBox.Location = new Point(40, 0);
         }
+
         public string Name
         {
             get { return this.name; }
@@ -49,7 +46,8 @@ namespace Rpg_Game_Team_Doldur.Characters
                 this.name = value;
             }
         }
-        public PictureBox Sprite { get; set; }
+
+        public PictureBox SpritePictureBox { get; set; }
 
         public int EnergyPoints
         {
@@ -63,9 +61,7 @@ namespace Rpg_Game_Team_Doldur.Characters
                 this.energyPoints = value;
             }
         }
-
-        public PlayerClass Class { get; private set; }
-
+        
         public IEnumerable<GameObject> Items
         {
             get { throw new NotImplementedException(); }
@@ -73,8 +69,8 @@ namespace Rpg_Game_Team_Doldur.Characters
 
         public void Move(int x, int y)
         {
-            Point currLoc = new Point(this.Sprite.Location.X, this.Sprite.Location.Y);
-            this.Sprite.Location = new Point(currLoc.X + x, currLoc.Y + y);
+            Point currLoc = new Point(this.SpritePictureBox.Location.X, this.SpritePictureBox.Location.Y);
+            this.SpritePictureBox.Location = new Point(currLoc.X + x, currLoc.Y + y);
            
         }
 

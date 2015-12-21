@@ -1,22 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Rpg_Game_Team_Doldur.Characters;
-using Rpg_Game_Team_Doldur.Characters.Classes;
-using Rpg_Game_Team_Doldur.Common;
-using Rpg_Game_Team_Doldur.Dependencies;
-
-
-namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
+﻿namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 {
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.IO;
+    using System.Windows.Forms;
+    using Characters;
+    using Dependencies;
+
     public partial class ShadowMountains : Form
     {
         private Player player;
@@ -28,7 +18,6 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
         PictureBox worldMapSpritePb;
         private bool inCombat;
         private TextBoxReader textBoxReader;
-
 
         public ShadowMountains(Player player)
         {
@@ -57,8 +46,8 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
             worldMapSpritePb.BackColor = Color.Transparent;
             worldMapSpritePb.Parent = this;
             worldMapSpritePb.BorderStyle = BorderStyle.None;
-            this.Controls.Add(this.Player.Sprite);
-            this.Player.Sprite.Parent = this.worldMapSpritePb;
+            this.Controls.Add(this.Player.SpritePictureBox);
+            this.Player.SpritePictureBox.Parent = this.worldMapSpritePb;
 
         }
 
@@ -168,9 +157,6 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
             return false;
         }
 
-
-      
-
         private void ShadowMountains_KeyDown(object sender, KeyEventArgs e)
         {
 
@@ -196,8 +182,8 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
                 }
 
                 //
-                Point potentialMove = new Point(p.X + this.Player.Sprite.Location.X,
-                    p.Y + this.Player.Sprite.Location.Y);
+                Point potentialMove = new Point(p.X + this.Player.SpritePictureBox.Location.X,
+                    p.Y + this.Player.SpritePictureBox.Location.Y);
 
 
                 if (this.GetWalkableAt(potentialMove))
@@ -243,6 +229,7 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens.Worlds
 
             Draw();
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();

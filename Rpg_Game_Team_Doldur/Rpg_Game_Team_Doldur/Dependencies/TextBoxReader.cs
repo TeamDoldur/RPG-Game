@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rpg_Game_Team_Doldur.Common
+﻿namespace Rpg_Game_Team_Doldur.Dependencies
 {
+    using System.Collections.Generic;
+    using System.IO;
+
     public class TextBoxReader
     {
         public bool open;

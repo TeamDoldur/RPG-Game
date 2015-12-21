@@ -16,16 +16,14 @@ namespace Rpg_Game_Team_Doldur.Engines.Screens
         {
             InitializeComponent();
 
-            ChooseCharacterScreen = new ChooseCharacterScreen();
+            this.ChooseCharacterScreen = new ChooseCharacterScreen();
         }
-
-        public ChooseCharacterScreen Type { get; set; }
-
+        
         public ChooseCharacterScreen ChooseCharacterScreen { get; set; }
 
         private void startGameButton_Click(object sender, EventArgs e)
         {
-            ChooseCharacterScreen.Show();
+            this.ChooseCharacterScreen.Show();
             this.Hide();
         }
 

@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Common;
 
 namespace Rpg_Game_Team_Doldur.Characters.Classes
 {
-    class Warrior : Player
+    public class Warrior : Player
     {
          private const int initialDamage = 50;
          private const int initialHealth = 250;
@@ -17,12 +10,10 @@ namespace Rpg_Game_Team_Doldur.Characters.Classes
 
        
         public Warrior(int id, Position position, string name)
-             : base(id, position, name, initialDamage, initialHealth, initialEnergyPoints, PlayerClass.Warrior)
+             : base(id, position, initialDamage, initialHealth, name, initialEnergyPoints)
         {
            
         }
-
-       
 
         public override void Heal()
         {
