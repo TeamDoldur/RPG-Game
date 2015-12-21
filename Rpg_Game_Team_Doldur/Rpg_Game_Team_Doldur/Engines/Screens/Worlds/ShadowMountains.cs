@@ -27,11 +27,9 @@
             InitializeLevel();
             Draw();
         }
-
-
+        
         public Player Player { get; private set; }
-
-
+        
         public void InitializeLevel()
         {
             LoadNewMap(0, 0);
@@ -48,7 +46,6 @@
             worldMapSpritePb.BorderStyle = BorderStyle.None;
             this.Controls.Add(this.Player.SpritePictureBox);
             this.Player.SpritePictureBox.Parent = this.worldMapSpritePb;
-
         }
 
         void LoadNewMap(int xMove, int yMove)
