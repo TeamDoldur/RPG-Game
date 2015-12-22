@@ -18,7 +18,8 @@
             this.Damage = damage;
             this.Health = health;
             this.IsAlive = true;
-            this.VisualizePlayer(Position.X, Position.Y, image);
+            this.Image = image;
+            this.VisualizePlayer(Position.X, Position.Y, this.Image);
         }
 
         public Position Position
@@ -69,6 +70,8 @@
                 }
             }
         }
+
+        public Image Image { get; private set; }
 
         public bool IsAlive { get; private set; }
 

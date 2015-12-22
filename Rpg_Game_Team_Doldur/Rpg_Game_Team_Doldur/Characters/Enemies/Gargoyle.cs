@@ -1,11 +1,7 @@
-﻿using System.Drawing;
-using System.Runtime.CompilerServices;
-using System.Windows.Forms;
-using Rpg_Game_Team_Doldur.Interfaces;
-using Rpg_Game_Team_Doldur.Properties;
-
-namespace Rpg_Game_Team_Doldur.Characters.Enemies
+﻿namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
+    using System.Drawing;
+
     public class Gargoyle : Enemy
     {
         private const int GargoyleDamage = 30;

@@ -1,8 +1,7 @@
-﻿using Rpg_Game_Team_Doldur.Interfaces;
-
-namespace Rpg_Game_Team_Doldur.Characters.Enemies
+﻿namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
     using System.Drawing;
+    using Interfaces;
 
     public abstract class Enemy : Character
     {

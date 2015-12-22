@@ -1,9 +1,8 @@
-﻿using System;
-using System.Drawing;
-using Rpg_Game_Team_Doldur.Weapons;
-
-namespace Rpg_Game_Team_Doldur.Characters.PlayerCharacters
+﻿namespace Rpg_Game_Team_Doldur.Characters.PlayerCharacters
 {
+    using System.Drawing;
+    using Weapons;
+
     public class Archer : Player
     {
         private const int InitialDamage = 30;

@@ -1,7 +1,7 @@
-﻿using System.Drawing;
-
-namespace Rpg_Game_Team_Doldur.Characters.Enemies
+﻿namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
+    using System.Drawing;
+
     public class Bandit : Enemy
     {
         private const int BanditDamage = 20;

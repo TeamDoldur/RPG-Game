@@ -1,12 +1,7 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rpg_Game_Team_Doldur.Characters.Enemies
+﻿namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
+    using System;
+
     public class EnemyFactory
     {
         public Enemy CreateEnemy(string type, Position position)

@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using Rpg_Game_Team_Doldur.Interfaces;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using Rpg_Game_Team_Doldur.Characters;
-using Rpg_Game_Team_Doldur.Characters.Enemies;
-using Rpg_Game_Team_Doldur.Engines.Screens;
-
-namespace Rpg_Game_Team_Doldur.Engines
+﻿namespace Rpg_Game_Team_Doldur.Engines
 {
+    using Interfaces;
+    using System.Collections.Generic;
+    using System.Windows.Forms;
+    using Screens;
+
     public class CollisionDetection : ICollision
     {
         public CollisionDetection(Form level)
