@@ -15,10 +15,8 @@ namespace Rpg_Game_Team_Doldur.Characters.Enemies
             {
                 case "Bandit":
                     return new Bandit(position);
-                    break;
                 case "Gargoyle":
                     return new Gargoyle(position);
-                    break;
                 default:
                     return null; // TODO: need fixing if there is time
                     throw new ArgumentException("There is no such enemy type.");

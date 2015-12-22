@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Rpg_Game_Team_Doldur.Interfaces
 {
-    public interface IPlayer : ICharacter
+    public interface IPlayer : ICharacter, IHeal
     {
+        IWeapon Weapon { get; }
     }
 }

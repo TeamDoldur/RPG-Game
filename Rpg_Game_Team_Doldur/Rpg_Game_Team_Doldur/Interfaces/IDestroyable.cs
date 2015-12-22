@@ -8,7 +8,8 @@ namespace Rpg_Game_Team_Doldur.Interfaces
 {
     public interface IDestroyable
     {
-        int Health { get; }
+        int Health { get; set; }
+
         bool IsAlive { get; }
     }
 }

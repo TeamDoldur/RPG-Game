@@ -4,30 +4,30 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using Rpg_Game_Team_Doldur.Characters;
 using Rpg_Game_Team_Doldur.Characters.Enemies;
+using Rpg_Game_Team_Doldur.Engines.Screens;
 
 namespace Rpg_Game_Team_Doldur.Engines
 {
     public class CollisionDetection : ICollision
     {
-        public CollisionDetection(Form level, Form combatForm)
+        public CollisionDetection(Form level)
         {
-            this.Form = level;
-            this.CombatForm = combatForm;
+            this.PlayField = level;
         }
 
-        private Form Form { get; set; }
-        private Form CombatForm {get; set; }
+        private Form PlayField { get; set; }
+
+        private Form CombatScreen { get; set; }
+
         public IEnumerable<ICharacter> UnitsInMap { get; private set; }
-        public void DetectCollision(ICharacter player, ICharacter enemy)
+
+        public void DetectCollision(IPlayer player, ICharacter enemy)
         {
-            if ((player.Position.X == enemy.Position.X) && (player.Position.Y == enemy.Position.Y))
-            {
-                this.Form.Hide();
-                this.CombatForm.StartPosition = FormStartPosition.Manual;
-                CombatForm.Location = this.Form.Location;
-                CombatForm.Show();
-                CombatForm.Activate();
-            }
+            this.PlayField.Hide();
+            this.CombatScreen = new CombatScreen(player, enemy, this.PlayField);
+            this.CombatScreen.StartPosition = FormStartPosition.Manual;
+            this.CombatScreen.Location = this.PlayField.Location;
+            this.CombatScreen.Show();
         }
     }
 }

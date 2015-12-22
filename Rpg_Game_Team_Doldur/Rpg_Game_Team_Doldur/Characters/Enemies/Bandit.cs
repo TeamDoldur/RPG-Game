@@ -4,7 +4,7 @@ namespace Rpg_Game_Team_Doldur.Characters.Enemies
 {
     public class Bandit : Enemy
     {
-        private const int BanditDamage = 10;
+        private const int BanditDamage = 20;
         private const int BanditHealth = 150;
         private static readonly Image Img = Properties.Resources.Bandits;
 

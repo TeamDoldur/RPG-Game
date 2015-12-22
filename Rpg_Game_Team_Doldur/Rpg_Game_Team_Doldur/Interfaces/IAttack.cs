@@ -8,7 +8,8 @@ namespace Rpg_Game_Team_Doldur.Interfaces
 {
     public interface IAttack
     {
-        int Damage { get; }
+        int Damage { get; set; }
+
         void Attack(ICharacter enemy);
     }
 }

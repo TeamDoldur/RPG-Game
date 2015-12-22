@@ -7,6 +7,7 @@
 
     public abstract class Character : ICharacter
     {
+        private bool healthIsInitialized;
         private Position position;
         private int damage;
         private int health;
@@ -17,7 +18,7 @@
             this.Damage = damage;
             this.Health = health;
             this.IsAlive = true;
-            this.VisualizePlayer(Position.X,Position.Y,image);
+            this.VisualizePlayer(Position.X, Position.Y, image);
         }
 
         public Position Position
@@ -31,7 +32,7 @@
         public int Damage
         {
             get { return this.damage; }
-            private set
+            set
             {
                 if (value < 0)
                 {
@@ -45,10 +46,9 @@
         public int Health
         {
             get { return this.health; }
-            private set
+            set
             {
-                // validating health at its initialization
-                if (this.health == 0)
+                if (!healthIsInitialized)
                 {
                     if (value <= 0)
                     {
@@ -56,16 +56,21 @@
                     }
 
                     this.health = value;
+                    this.healthIsInitialized = true;
                 }
                 else
                 {
-                    if (this.health <= 0)
+                    if (value <= 0)
                     {
                         this.IsAlive = false;
                     }
+
+                    this.health = value;
                 }
             }
         }
+
+        public bool IsAlive { get; private set; }
 
         public void VisualizePlayer(int posX, int posY, Image image)
         {
@@ -77,12 +82,7 @@
             this.SpritePictureBox.Show();
             this.SpritePictureBox.Location = new Point(posX, posY);
         }
-
-        public bool IsAlive { get; private set; }
-
-        public void Attack(ICharacter enemy)
-        {
-            throw new NotImplementedException();
-        }
+        
+        public abstract void Attack(ICharacter enemy);
     }
 }

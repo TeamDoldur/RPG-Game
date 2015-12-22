@@ -4,8 +4,8 @@
     using System.Drawing;
     using System.IO;
     using System.Windows.Forms;
-    using Characters;
     using Dependencies;
+    using Characters.PlayerCharacters;
     using Characters.Enemies;
 
     public partial class ShadowMountains : Form
@@ -18,45 +18,42 @@
         PictureBox worldMapSpritePb;
         private bool inCombat;
         private TextBoxReader textBoxReader;
-        private CollisionDetection collisionDetection;
         private EnemyHandler enemyHandler;
         private IEnumerable<Enemy> enemyList;
-        
+
         public ShadowMountains(Player player)
         {
             InitializeComponent();
             this.Player = player;
-            mapTiles = new List<Tile>();
-            this.collisionDetection = new CollisionDetection(this, new CombatEngine());
+            this.mapTiles = new List<Tile>();
             this.enemyList = new List<Enemy>();
-            InitializeLevel();
-            Draw();
+            InitializeField();
+            this.Draw();
         }
-        
+
         public Player Player { get; private set; }
-        
-        public void InitializeLevel()
+
+        public void InitializeField()
         {
-            worldMapSpritePb = new PictureBox();
-            worldMapSpritePb.Width = this.Width;
-            worldMapSpritePb.Height = this.Height;
-            worldMapSpritePb.BackColor = Color.Transparent;
-            worldMapSpritePb.Parent = this;
-            worldMapSpritePb.BorderStyle = BorderStyle.None;
+            this.worldMapSpritePb = new PictureBox();
+            this.worldMapSpritePb.Width = this.Width;
+            this.worldMapSpritePb.Height = this.Height;
+            this.worldMapSpritePb.BackColor = Color.Transparent;
+            this.worldMapSpritePb.Parent = this;
+            this.worldMapSpritePb.BorderStyle = BorderStyle.None;
 
-            inCombat = false;
+            this.inCombat = false;
 
-            textBoxReader = new TextBoxReader();
+            this.textBoxReader = new TextBoxReader();
 
-            LoadNewMap(0, 0);
+            this.LoadNewMap(0, 0);
 
             this.Controls.Add(this.Player.SpritePictureBox);
             this.Player.SpritePictureBox.Parent = this.worldMapSpritePb;
         }
 
-        void LoadNewMap(int xMove, int yMove)
+        private void LoadNewMap(int xMove, int yMove)
         {
-
             this.RemoveEnemies();
 
             mapX += xMove;
@@ -66,11 +63,11 @@
             // LoadMonstersOnMap();
             //LoadFriendlyNPCsOnMap();
         }
-        
+
         public void LoadMap(string mapName)
         {
             mapTiles.Clear();
-            
+
             StreamReader reader = new StreamReader(@"..\..\Resources\Maps\ShadowMountains\" + mapName + ".txt");
             this.enemyHandler = new EnemyHandler();
             int y = 0;
@@ -84,18 +81,18 @@
                 {
                     Tile t = new Tile();
 
-                    t.loc = new Point(x * 40, y * 40);
+                    t.TileLocation = new Point(x * 40, y * 40);
 
                     if (line[x].ToString() == "1")
                     {
 
-                        t.img = Properties.Resources.GrassTile;
-                        t.walkable = true;
+                        t.TileImg = Properties.Resources.GrassTile;
+                        t.Walkable = true;
                     }
                     if (line[x].ToString() == "0")
                     {
-                        t.img = Properties.Resources.WaterTile;
-                        t.walkable = false;
+                        t.TileImg = Properties.Resources.WaterTile;
+                        t.Walkable = false;
                     }
 
                     mapTiles.Add(t);
@@ -107,7 +104,7 @@
             this.enemyHandler.LoadEnemies(mapName);
             this.enemyList = this.enemyHandler.EnemyList;
             this.LoadEnemies();
-           
+
             reader.Close();
         }
 
@@ -115,8 +112,11 @@
         {
             foreach (var enemy in this.enemyList)
             {
-                this.Controls.Add(enemy.SpritePictureBox);
-                enemy.SpritePictureBox.Parent = this.worldMapSpritePb;
+                if (enemy.IsAlive)
+                {
+                    this.Controls.Add(enemy.SpritePictureBox);
+                    enemy.SpritePictureBox.Parent = this.worldMapSpritePb;
+                }
             }
         }
 
@@ -129,7 +129,7 @@
             }
         }
 
-        void Draw()
+        private void Draw()
         {
             Graphics device;
             Image img = new Bitmap(this.Width, this.Height);
@@ -158,26 +158,25 @@
                     new SolidBrush(Color.White), new Point(5, 305));
             }
 
-            worldMapSpritePb.Image = img;
+            this.worldMapSpritePb.Image = img;
         }
 
         public void DrawMap(Graphics device)
         {
-            foreach (Tile t in mapTiles)
+            foreach (Tile tile in mapTiles)
             {
-                device.DrawImageUnscaledAndClipped(t.img, new Rectangle(t.loc, new Size(40, 40)));
+                device.DrawImageUnscaledAndClipped(tile.TileImg, new Rectangle(tile.TileLocation, new Size(40, 40)));
                 //device.DrawImage(t.img, t.loc);
             }
         }
 
-        public bool GetWalkableAt(Point loc)
+        public bool GetWalkableAt(Point location)
         {
-            foreach (Tile t in mapTiles)
+            foreach (Tile tile in mapTiles)
             {
-                if (t.loc == loc)
+                if (tile.TileLocation == location && tile.Walkable)
                 {
-                    if (t.walkable)
-                        return true;
+                    return true;
                 }
             }
 
@@ -219,7 +218,7 @@
                 else
                 {
                     //Load new map if possible
-                    if (potentialMove.X > this.Width-80)
+                    if (potentialMove.X > this.Width - 80)
                     {
                         LoadNewMap(1, 0);
                         this.Player.Move((this.Width * (-1)), 0);
@@ -240,9 +239,13 @@
 
                 foreach (var enemy in this.enemyList)
                 {
-                    this.collisionDetection.DetectCollision(this.Player,enemy);
+                    if ((this.Player.Position.X == enemy.Position.X) && (this.Player.Position.Y == enemy.Position.Y) && enemy.IsAlive)
+                    {
+                        var collisionDetection = new CollisionDetection(this);
+                        collisionDetection.DetectCollision(this.Player, enemy);
+                    }
                 }
-                
+
                 //foreach (var enemy in collisionDetection.UnitsInMap)
                 //{
                 //    if (!(enemy is Player))
