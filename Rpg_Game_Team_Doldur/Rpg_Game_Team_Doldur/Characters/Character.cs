@@ -64,9 +64,12 @@
                     if (value <= 0)
                     {
                         this.IsAlive = false;
+                        this.health = 0;
                     }
-
-                    this.health = value;
+                    else
+                    {
+                        this.health = value;
+                    }
                 }
             }
         }
