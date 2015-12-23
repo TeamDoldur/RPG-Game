@@ -75,8 +75,7 @@
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
-
-
+                
                 for (int x = 0; x < line.Length; x++)
                 {
                     Tile t = new Tile();
